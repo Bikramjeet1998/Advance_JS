@@ -1,0 +1,70 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log("Bikram nu karna  ne keha ja milk leya");
+
+        console.log("Bikram chla gea");
+
+
+        let promise = new Promise(function(resolve, reject){
+
+            setTimeout(function(){
+                let bikramGotMilk = true;
+    
+                if(bikramGotMilk){
+                    resolve("Bikram got milk")
+                }else{
+                    reject("Bikram failed");
+                }
+            }, 5000);
+        });
+
+        console.log(promise)
+
+        promise
+        .then(function(result){
+            console.log(result)
+            return result;
+        })
+        .catch(function(error){
+            console.log(error)
+            return error;
+        })
+        .finally(function(){
+            console.log("ENd")
+        })
+
+        // asynchronous
+        // synchronous
+
+        // console.log(1);
+        
+        // setTimeout(function(){
+        //     console.log(2);
+        // },2000);
+
+        let x = 0;
+
+        // setInterval(function(){
+            // console.log(x + 1)
+            // x = x + 1;
+            // x++;
+            // ++x;
+
+            // if(x == 10){
+            //     alert('Condition fullfilled!')
+            // }
+            // console.log('test')
+        // }, 2000)
+
+        // console.log(3);
+    </script>
+</body>
+</html>
