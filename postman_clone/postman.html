@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="postman.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <select id="method" name="method">
+          <option value="get">GET</option>
+          <option value="post">POST</option>
+          <option value="put">PUT</option>
+          <option value="del">DEL</option>
+        </select>
+        <input type="text" class="input" value="" placeholder="Enter URL" />
+        <input type="submit" value="send" id="send" />
+      </div>
+
+      <div class="Output">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="postman.js"></script>
+  </body>
+</html>
